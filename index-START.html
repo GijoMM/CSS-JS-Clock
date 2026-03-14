@@ -88,13 +88,6 @@
     const hours = now.getHours();
     const hoursDegrees = ((hours / 12) * 360) + 90;
     hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
-
-    const hands = document.querySelector('.hand');
-    hands.addEventListener('transitioned', removeTransition)
-  }
-
-  function removeTransition(a) {
-    
   }
 
   setInterval(setDate, 1000);
