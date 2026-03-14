@@ -89,9 +89,10 @@
     const hoursDegrees = ((hours / 12) * 360) + 90;
     hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
 
-    const hands = document.querySelector('.hand');
-    hands.addEventListener('transitioned', removeTransition)
   }
+
+  const hands = document.querySelector('.hand');
+  hands.addEventListener('transitioned', removeTransition);
 
   function removeTransition(a) {
     
